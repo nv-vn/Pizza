@@ -1,0 +1,18 @@
+// dough = val + 1
+// sauce = val - 1
+// mozarella = input and check char... val + 0 if match, val + 1 if not
+// pepperoni = output char
+
+(>cheese<)
+  dough * 1 // + 1 = 1
+  sauce * 1 // - 1 = 0
+  mozarella * 65 // 'A' in ascii
+flip pep. // next call?
+
+(>pep<)
+  dough * 1 // + 1 = 1
+  sauce * 1 // - 1 = 0
+  pepperoni * 65 // 'A' in ascii
+flip.
+
+order cheese. // see if ingredients in stock (eval cheese)... if 0 then flip to pep...

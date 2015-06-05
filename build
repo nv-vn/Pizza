@@ -1,0 +1,23 @@
+#!/bin/bash
+cd src
+
+ocamllex lexer.mll
+ocamlyacc parser.mly
+ocamlc -c ast.ml
+ocamlc -c parser.mli
+ocamlc -c lexer.ml
+ocamlc -c parser.ml
+ocamlc -c util.ml
+ocamlc -c runtime.ml
+ocamlc -c main.ml
+ocamlc -o ../pizza -custom unix.cma lexer.cmo parser.cmo ast.cmo util.cmo runtime.cmo main.cmo -cclib -lunix
+
+cd ..
+
+./pizza
+
+rm src/lexer.ml
+rm src/parser.ml
+rm src/parser.mli
+rm src/*.cmi
+rm src/*.cmo
