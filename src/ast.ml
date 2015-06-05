@@ -11,5 +11,3 @@ type proc_or_fun =
 type expression =
   | Def of proc_or_fun
   | Order of string
-  | Cook
-  | Serve

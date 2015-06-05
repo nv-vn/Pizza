@@ -7,9 +7,7 @@
 %token TIMES
 %token PERIOD
 %token FLIP
-%token COOK
 %token ORDER
-%token SERVE
 %token DOUGH
 %token SAUCE
 %token MOZZARELLA
@@ -33,10 +31,6 @@ expression:
     { Def (Deffunc ($2, $4, $6)) }
   | ORDER IDENT PERIOD
     { Order $2 }
-  | COOK PERIOD
-    { Cook }
-  | SERVE PERIOD
-    { Serve }
 
 ingredient_list:
   |

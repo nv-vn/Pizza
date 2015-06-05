@@ -11,9 +11,7 @@ rule token = parse
   | '*'			{ TIMES }
   | '.'			{ PERIOD }
   | "flip"		{ FLIP }
-  | "cook"		{ COOK }
   | "order"		{ ORDER }
-  | "serve"		{ SERVE }
   | "dough"		{ DOUGH }
   | "sauce"		{ SAUCE }
   | "mozzarella"	{ MOZZARELLA }
