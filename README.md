@@ -34,7 +34,7 @@ The table below describes each ingredient in depth:
 | Dough      | _n_                   | None                                                           |
 | Sauce      | -_n_                  | None                                                           |
 | Mozzarella | 0 if true, 1 if false | Takes 1 character of input and compares it against _n_ (ASCII) |
-| Pepperoni  | _n_                   | Prints _n_ (ASCII)                                             |
+| Pepperoni  | -_n_                   | Prints _n_ (ASCII)                                             |
 
 ## Instructions
 
